@@ -20,14 +20,28 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      .appwarp{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+      }
+
+      .appwarp > div{
+        flex-grow: 1;
+        border:1px solid #fff;
+      }
+    </style>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
-    <div id="mobx-root"></div>
-    <div id="redux-root"></div>
+    <div class="appwarp"><div id="root"></div>
+      <div id="mobx-root"></div>
+      <div id="redux-root"></div></div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
